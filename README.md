@@ -27,6 +27,21 @@ combinations drive the most revenue?
 - Electronics combines high AOV with high order volume — strongest growth opportunity
 - Top 20% of customers generate disproportionate share of revenue
 
+## 🚀 Case Study: Investigating Drop-offs with Root Cause Analysis
+
+**Scenario:** During the analysis, I simulated a scenario where a 20% drop in weekly active users was observed.
+
+**The Approach (Simplicity Scales):**
+Instead of jump-starting a complex Machine Learning model, I used a **SQL-first approach** to segment the data. I focused on identifying "where" and "why" the drop happened.
+
+**The Analysis:**
+- Used `WINDOW FUNCTIONS` and `PARTITION BY` to track user behavior across cohorts.
+- Segmented retention by **signup source** and **device type** (Android vs. iOS).
+- Found that a specific segment (e.g., Android users from Instagram) had 37% lower retention due to a technical friction point in the onboarding funnel.
+
+**Business Impact:**
+By identifying the root cause with SQL, I could provide immediate actionable insights to the technical team to fix the funnel, restoring engagement without the need for expensive ML infrastructure.
+
 ## Tools & Technologies
 
 - **Google BigQuery** — SQL queries and segmentation
