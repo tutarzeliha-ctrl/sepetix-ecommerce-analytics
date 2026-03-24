@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: sepetix_orders
+    description: "Müşteri siparişleri (transformed)"
+    columns:
+      - name: order_id
+        description: "Sipariş ID (benzersiz)"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Müşteri ID"
+      - name: status
+        description: "Sipariş durumu (completed, pending)"

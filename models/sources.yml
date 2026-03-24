@@ -1,0 +1,7 @@
+sources:
+  - name: raw_data
+    description: Raw data from Sepetix
+    database: sepetix-analytics
+    schema: dbt_ztatar_sepetix
+    tables:
+      - name: orders

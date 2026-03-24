@@ -1,0 +1,11 @@
+sepetix-analytics:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      project: sepetix-analytics
+      dataset: dbt_ztatar_sepetix
+      method: service-account
+      threads: 4
+      timeout_seconds: 300
+      location: US
